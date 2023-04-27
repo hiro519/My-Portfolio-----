@@ -1,0 +1,76 @@
+a{
+    color: #333;
+    text-decoration: none;
+}
+.cmn-title{
+text-align: center;
+font-weight: bold;
+}
+.sub-title{
+display: block;
+color: skyblue;
+}
+.main-title{
+display: block;
+font-size: 2rem;
+}
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1024px;
+margin: 0 auto;
+
+}
+.header-logo{
+
+}
+
+.header-item{
+margin-left: 2.5rem;
+font-size: 1.2rem;
+}
+.about{
+max-width: 800px;
+margin: 120px auto 0px;
+}
+
+.about-wrapper{
+    display: flex;
+    margin-top: 60px;
+}
+.about-text{
+
+}
+.about-greeting{
+
+}
+.about-career{
+
+}
+.about-subtitle{
+
+}
+.about-item{
+
+}
+.header-list{
+    display: flex;
+}
+.footer{
+background-color: gray;
+padding: 30px 0px 10px;
+}
+.footer-list{
+display: flex;
+justify-content: space-between;
+max-width: 400px;
+margin: 0 auto;
+}
+.footer-item{
+
+}
+.copyright{
+margin-top: 2rem;
+text-align: center;
+}
