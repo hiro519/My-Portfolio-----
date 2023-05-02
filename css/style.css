@@ -2,18 +2,9 @@ a{
     color: #333;
     text-decoration: none;
 }
-.cmn-title{
-text-align: center;
-font-weight: bold;
-}
-.sub-title{
-display: block;
-color: skyblue;
-}
-.main-title{
-display: block;
-font-size: 2rem;
-}
+
+
+
 .header{
 display: flex;
 justify-content: space-between;
@@ -30,28 +21,78 @@ margin: 0 auto;
 margin-left: 2.5rem;
 font-size: 1.2rem;
 }
+/* about */
 .about{
 max-width: 800px;
 margin: 120px auto 0px;
 }
-
+.cmn-title{
+    text-align: center;
+    font-weight: bold;
+}
+.sub-title{
+        display: block;
+        color: #38b6ff;
+        
+}
+.main-title{
+        display: block;
+        font-size: 2rem;
+}
 .about-wrapper{
     display: flex;
     margin-top: 60px;
 }
-.about-text{
+.about-image{
 
+}
+.about-text{
+margin-left: 80px;
 }
 .about-greeting{
 
 }
+.greeting-desc{
+
+}
 .about-career{
+    margin-top: 30px;
 
 }
 .about-subtitle{
+font-size: 1.5rem;
+color: #38b6ff;
+margin-bottom: 0.5rem;
+}
+.career-list{
+    list-style: disc;
+}
+.career-item{
 
 }
-.about-item{
+/* skills */
+.skill{
+max-width: 1024px;
+margin: 120px aut 0px;
+}
+.skill-list{
+margin-top: 60px;
+display: flex;
+gap: 0 20px;
+}
+.skill-item{
+
+}
+.skill-image {
+height: 180px;
+text-align: center;
+}
+.skill-name{
+font-size: 1.5rem;
+font-weight: bold;
+text-align: center;
+}
+.skill-desc{
 
 }
 .header-list{
