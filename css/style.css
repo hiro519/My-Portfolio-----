@@ -1,3 +1,35 @@
+/* .test{
+    font-size: 30px;
+height: 200px;
+background-color: yellow;    
+}
+/* 768px以上の時（タブレットサイズの時） */
+@media screen and (min-width:768px) {
+    .test{
+        font-size: 40px;
+        height: 400px;
+        background-color: yellowgreen;
+    }
+}
+/* タブレット768―1024px */
+
+/* 1025px以上の時（ＰＣサイズの時） */
+@media screen and (min-width:1025px) {
+    .test{
+        font-size: 60px;
+        height: 400px;
+        background-color: green;
+    }
+} */
+
+html{
+    font-size: 14px;
+}
+@media screen and (min-width: 768px){
+ html{
+    font-size: 16px;
+ }  
+}
 a{
     color: #333;
     text-decoration: none;
@@ -6,9 +38,7 @@ a{
 
 
 .header{
-display: flex;
-justify-content: space-between;
-align-items: center;
+padding: 20px 16px;
 max-width: 1024px;
 margin: 0 auto;
 
@@ -17,9 +47,59 @@ margin: 0 auto;
 
 }
 
+.header-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
 .header-item{
-margin-left: 2.5rem;
+
 font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px){
+    .header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 80px;
+padding: 0px;
+    }
+    .header-list{
+        margin-top: 0;
+    }
+    .header-item{
+     margin-left: 2.5rem;   
+    }
+}
+    
+
+/* firstview */
+
+.firstview{
+    background-image: url(../image/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+.firstview-massage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3rem;
+  letter-spacing: 0.3rem;
+}
+.blue{
+    color: #38b6ff;
+}
+
+@media  screen and(min-width: 768px){
+    .firstview-massage{
+font-size: 5.5rem;
+  letter-spacing: 0.5rem;
+    }
 }
 /* about */
 .about{
@@ -40,15 +120,13 @@ margin: 120px auto 0px;
         font-size: 2rem;
 }
 .about-wrapper{
-    display: flex;
+    
     margin-top: 60px;
 }
 .about-image{
+text-align: center;
+}
 
-}
-.about-text{
-margin-left: 80px;
-}
 .about-greeting{
 
 }
@@ -65,15 +143,25 @@ color: #38b6ff;
 margin-bottom: 0.5rem;
 }
 .career-list{
-    list-style: disc;
+    list-style: none;
 }
 .career-item{
 
 }
+
+@media  screen and(min-width: 768px){
+    .about-wrapper{
+        display: flex;
+    }
+    .about-text{
+        margin-left: 80px;
+        }
+}
+
 /* skills */
 .skill{
 max-width: 1024px;
-margin: 120px aut 0px;
+margin: 120px auto 0px;
 }
 .skill-list{
 margin-top: 60px;
@@ -94,6 +182,61 @@ text-align: center;
 }
 .skill-desc{
 
+}
+
+/* works */
+
+.works{
+max-width: 900px;
+margin: 120px auto 0px;
+}
+.work-list{
+    margin-top: 60px;
+}
+.work-item{
+display: flex;
+gap: 0 50px;
+margin-top: 20px;
+}
+.work-item.revers{
+    flex-direction: row-reverse;
+}
+.work-image{
+width: 50%;
+}
+.work-image img{
+    width: 100%;
+}
+.work-text{
+margin-top: 2rem;
+width: 50%;
+}
+.work-desc{
+margin-top: 1rem;
+}
+
+/* contact */
+
+.contact{
+margin: 120px 0px;
+text-align: center;
+}
+.contact-text{
+margin-top: 60px;
+}
+.contact-massage{
+
+}
+.contact-mail{
+font-size: 2rem;
+font-weight: bold;
+}
+.icon-area{
+margin-top: 30px;
+}
+.icon-area .fab{
+font-size: 2rem;
+margin:  0px 1rem;
 }
 .header-list{
     display: flex;
